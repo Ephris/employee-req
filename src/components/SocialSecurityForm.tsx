@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { SocialSecurityFormData, ServiceHistory, Child } from '../types/socialSecurityTypes';
+import type { SocialSecurityFormData } from '../types/socialSecurityTypes';
 import { submitSocialSecurityFormToAdmin } from '../services/formSubmission';
 import { getErrorMessage } from '../services/api';
 import './SocialSecurityForm.css';
