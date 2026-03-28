@@ -1,16 +1,33 @@
-# My App (Frontend + Backend)
+# Employee Requirement System – Ambo University (Cursor Ambo Hackathon 2026)
 
-Modernized full-stack setup with:
-- React + Vite frontend
-- Express + MongoDB backend API
-- JWT-authenticated admin routes
-- Tailwind foundation for modern UI
+This is a web-based Employee Requirement system built for Ambo University during the Cursor Ambo Hackathon 2026. The goal is to replace the paper-based process with a modern, efficient, and searchable web application for collecting, reviewing, and managing employee requirement information.
+
+Note: This repository contains a functional subset suitable for demonstration and deployment. The full internal submission delivered to Ambo University includes complete authentication and authorization with three roles (Admin, HR Manager, and Employee), role-based access control, and additional workflows. That enhanced version is reserved for the University for further development and deployment.
+
+Author: Ephrem Niguse
 
 ## Project Structure
 
 - `src/` frontend app
 - `backend/` backend service
 - `backend/src/modules/` API modules (`auth`, `submissions`, `uploads`, `health`)
+
+## Features (demo subset)
+
+- Employee requirement data capture via structured web forms
+- Admin login and protected admin panel (demo)
+- Submission management endpoints (backend)
+- Basic health checks and upload endpoints
+- Form autosave in local storage to prevent data loss (frontend)
+- Clean, accessible UI optimized for quick data entry
+
+## Full Project (submitted to Ambo University)
+
+- Secure authentication and session handling
+- Three roles: Admin, HR Manager, Employee
+- Role-based access control (RBAC) across routes and actions
+- Enhanced validation, auditing, and review workflows
+- Production deployment guidance and ops hardening
 
 ## Environment Setup
 
@@ -82,3 +99,22 @@ Then login from `/admin/login`.
 - Request body validation with Zod
 - Mongo payload sanitization
 - Upload type and size constraints
+
+## Tech Stack
+
+- Languages: TypeScript, JavaScript
+- Frontend: React 19, Vite 7
+- Routing: React Router
+- Styling: CSS (utility-first friendly), modern accessible components
+- Backend: Node.js (Express)
+- Database: MongoDB (Mongoose)
+- Auth: JWT, role-based access (full version)
+- Validation: Zod
+- Tooling: ESLint, TypeScript, Vite, npm
+- Deployment: Vercel (frontend), configurable backend hosting
+
+## Copyright
+
+Copyright © 2026 Ephrem Niguse.
+
+Permission is granted to Ambo University to evaluate and enhance the full internal submission. This public repository is provided for demonstration and educational purposes. All rights reserved unless a separate license is explicitly provided by the author.
